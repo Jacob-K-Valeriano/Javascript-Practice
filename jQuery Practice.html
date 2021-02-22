@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        $(document).ready(function() {
+
+            // INSERT JAVASCRIPT CODE SAMPLE HERE
+
+            //Use the correct selector to hide all <p> elements.
+            $("p").hide();
+
+            //Use the correct selector to hide an element with id="test".
+            $("#test").hide();
+
+            //Use the correct selector to hide all elements with class="test".
+            $(".test").hide();
+
+            //Use the correct selector to hide all elements in the document.
+            $("*").hide();
+
+            //Use the correct selector to hide all elements with an href attribute.
+            $("[href]").hide();
+
+            //Use the correct selector to hide all odd table rows in a table.
+            $("tr:odd").hide();
+
+            // ----------------EVENTS----------------
+
+            //Use the correct event to hide all <p> elements with a "click".
+            $("p").click(function(){
+                $(this).hide();
+            });
+
+            //Use the correct event to hide all <p> elements with a "double-click".
+            $("p").dblclick(function(){
+                $(this).hide();
+            });
+
+            //When the mouse pointer enters a <p> element, it should be hidden. Use the correct event to do so.
+            $("p").mouseenter(function(){
+                $(this).hide();
+            });
+
+            //If you press a keyboard key inside an <input> element, it should be hidden. Use the correct event to do so.
+            $("input").keypress(function () {
+                $(this).hide();
+            });
+
+            //Use the on() method to attach a click event handler to all <p> elements.
+            $("p").on("click", function () {
+                $(this).hide();
+            });
+
+        });
+
+    </script>
+</body>
+</html>
